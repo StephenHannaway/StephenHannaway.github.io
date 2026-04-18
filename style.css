@@ -10,12 +10,15 @@ body {
   font-family: 'Courier New', monospace;
   font-size: 12px;
   line-height: 1.9;
+  position: relative;
 }
 
 .container {
   max-width: 680px;
   margin: 0 auto;
   padding: 48px 32px;
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Header ── */
