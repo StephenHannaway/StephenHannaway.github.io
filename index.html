@@ -1,23 +1,72 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen Hannaway — Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
 
-<div class="home">
+    <header>
+      <div class="name">stephen hannaway</div>
+      <div class="tagline">software engineer · python · jpmorgan · london</div>
+      <nav class="links">
+        <a href="https://github.com/StephenHannaway" target="_blank" rel="noopener">github</a>
+        <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noopener">linkedin</a>
+        <a href="mailto:stephenjameshannaway@gmail.com">email</a>
+      </nav>
+    </header>
 
-  <h1 class="page-heading">Posts</h1>
+    <section>
+      <div class="section-heading">## about</div>
+      <p class="body-text">
+        Python-primary software engineer at JPMorgan. I build backend systems
+        and care about clean, reliable tooling. Interested in ethical,
+        sustainable technology.
+      </p>
+    </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <section>
+      <div class="section-heading">## stack</div>
+      <div class="grid">
+        <span class="grid-key">languages</span><span class="grid-value">python, sql, bash</span>
+        <span class="grid-key">tooling</span><span class="grid-value">uv, ruff, mypy, pytest, just</span>
+        <span class="grid-key">backend</span><span class="grid-value">fastapi, postgresql, redis</span>
+        <span class="grid-key">infra</span><span class="grid-value">git, linux, github actions</span>
+      </div>
+    </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <section>
+      <div class="section-heading">## experience</div>
+      <div class="grid">
+        <span class="grid-key">2022–now</span><span class="grid-value">JPMorgan Chase &amp; Co. — software engineer</span>
+      </div>
+    </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <section>
+      <div class="section-heading">## projects</div>
+      <div class="project-list">
+        <div>
+          <div class="project-name">HexMapper</div>
+          <div class="project-desc">pygame hex map editor for TTRPGs &middot; <a href="https://github.com/StephenHannaway/HexMapper">github.com/StephenHannaway/HexMapper</a></div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section>
+      <div class="section-heading">## contact</div>
+      <div class="contact-email">
+        <a href="mailto:stephenjameshannaway@gmail.com">stephenjameshannaway@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>stephenhannaway.github.io</span>
+      <span>plain html &middot; no frameworks &middot; no javascript</span>
+    </footer>
+
+  </div>
+</body>
+</html>
