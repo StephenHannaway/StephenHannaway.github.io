@@ -5,8 +5,7 @@
     "strict": true,
     "outDir": ".",
     "rootDir": "src",
-    "module": "none",
-    "ignoreDeprecations": "6.0"
+    "module": "commonjs"
   },
-  "include": ["src"]
+  "files": ["src/machine.ts"]
 }
